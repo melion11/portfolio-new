@@ -1,4 +1,3 @@
-import {useTranslation} from 'react-i18next';
 import {LangSwitcher} from '../../widgets';
 import {Menu} from '../../shared/ui/Menu/Menu';
 import {Logo} from '../../shared/ui/Logo/Logo';
@@ -6,9 +5,6 @@ import styled from 'styled-components';
 
 
 export const Header = () => {
-
-    const {t} = useTranslation()
-
 
     return (
         <StyledHeader>

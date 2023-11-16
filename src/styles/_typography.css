@@ -3,7 +3,7 @@
 
     /* line heights */
     --line-height-s: 16px;
-    --line-height-m: 24px;
+    --line-height-m: 26px;
     --line-height-l: 36px;
 
     /* font sizes */
@@ -11,8 +11,8 @@
     --font-size-s: 0.875rem;
     --font-size-m: 1rem;
     --font-size-l: 1.125rem;
-    --font-size-xl: 1.25rem;
-    --font-size-xxl: 1.625rem;
+    --font-size-xl: 32px;
+    --font-size-xxl: 48px;
 
     /* font weights */
     --font-weight-regular: 400;

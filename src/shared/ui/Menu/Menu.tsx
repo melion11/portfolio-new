@@ -1,42 +1,52 @@
 import {useTranslation} from 'react-i18next';
 import styled from 'styled-components';
-import {GitIcon} from '../../../assets/icons/GitIcon';
-import {LinkedIcon} from '../../../assets/icons/LinkedIcon';
-import {TgIcon} from '../../../assets/icons/TgIcon';
+import {useContext} from 'react';
+import {SocialsContext} from '../../../context/socialsContext';
+import {FlexWrapper} from '../FlexWrapper/FlexWrapper';
 
-interface MenuProps {
-    className?: string
+type NavType = {
+    title: string
+    link: string
 }
 
-export const Menu = ({className}: MenuProps) => {
+export const Menu = () => {
     const {t} = useTranslation()
+    const socials = useContext(SocialsContext)
 
-    const navNames = [t('home'), t('about'), t('techStack'), t('projects'), t('contacts')]
-    const socials = [
+    const navNames: NavType[] = [
         {
-            icon: <GitIcon/>,
+            title: t('home'),
             link: ''
         },
         {
-            icon: <LinkedIcon/>,
+            title: t('about'),
             link: ''
         },
         {
-            icon: <TgIcon/>,
+            title: t('techStack'),
+            link: ''
+        },
+        {
+            title: t('projects'),
+            link: ''
+        },
+        {
+            title: t('contact'),
             link: ''
         }]
+
 
     const navElements = navNames.map((el, i) => {
         return (
             <li key={i}>
-                <Link href="">{el}</Link>
+                <Link href={el.link}>{el.title}</Link>
             </li>
         )
     })
 
     const socialsElements = socials.map((el, i) => {
         return (
-            <Link href={el.link}>{el.icon}</Link>
+            <Link key={i} href={el.link}>{el.icon}</Link>
         )
     })
 
@@ -47,9 +57,9 @@ export const Menu = ({className}: MenuProps) => {
                 {navElements}
             </NavList>
 
-            <SocialsWrapper>
+            <FlexWrapper align={'center'} gap={'15px'}>
                 {socialsElements}
-            </SocialsWrapper>
+            </FlexWrapper>
         </StyledNav>
     );
 };
@@ -69,10 +79,4 @@ const NavList = styled.ul`
 
 const Link = styled.a`
   text-decoration: none;
-`
-
-const SocialsWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 15px;
 `

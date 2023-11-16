@@ -4,6 +4,19 @@
   "about": "About",
   "techStack": "Tech Stack",
   "projects": "Projects",
-  "contacts": "Contacts",
-  "name": "Iliya"
+  "contact": "Contact",
+  "name": "Iliya",
+  "fullName": "Iliya Grinyak",
+  "myNameIs": "My name is",
+  "hello": "Hello",
+  "frontend": "I'm Frontend Developer.",
+  "myTechStack": "My Tech Stack",
+  "techWorking": "Technologies I’ve been working with recently",
+  "things": "Things I’ve built so far",
+  "emailMe": "For any questions please mail me:",
+  "formName": "Name",
+  "formEmail": "Email",
+  "formMessage": "Message",
+  "send": "Send",
+  "phone": "tel."
 }

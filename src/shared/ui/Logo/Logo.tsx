@@ -29,7 +29,7 @@ const LogoIconW = styled(LogoIcon)`
 `
 
 const LogoWord = styled.span`
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xl);
   position: absolute;
   top: 16px;
   left: 16px;
