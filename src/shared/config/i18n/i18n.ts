@@ -17,7 +17,7 @@ i18n
         },
 
         backend: {
-            loadPath: '/portfolio/locales/{{lng}}/{{ns}}.json',
+            loadPath: '/portfolio-new/locales/{{lng}}/{{ns}}.json',
         },
     });
 
