@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {Icon} from '../../../../shared/ui/Icon/Icon';
 import {GitIcon} from '../../../../assets/icons/GitIcon';
 import {LivePreviewIcon} from '../../../../assets/icons/LivePreviewIcon';
-import {FlexWrapper} from '../../../../shared/ui/FlexWrapper/FlexWrapper';
+import {FlexWrapper} from '../../../../shared/ui/Styled/FlexWrapper/FlexWrapper';
 
 type ProjectProps = {
     title: string

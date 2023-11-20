@@ -1,4 +1,4 @@
-import {FaReact} from 'react-icons/fa';
+import {FaGithub, FaLinkedinIn, FaReact, FaTelegram} from 'react-icons/fa';
 import {
     SiAntdesign,
     SiAxios,
@@ -39,24 +39,37 @@ export type ProjectType = {
 }
 
 export type SocialType = {
-    icon: ReactNode
+    icon: IconType
     link: string
 };
 
+// export const socialsLinks: SocialType[] = [
+//     {
+//         icon: <GitIcon/>,
+//         link: 'https://github.com/melion11'
+//     },
+//     {
+//         icon: <LinkedIcon/>,
+//         link: 'https://www.linkedin.com/in/ilya-grinyak'
+//     },
+//     {
+//         icon: <TgIcon/>,
+//         link: 'https://t.me/melion11'
+//     }]
+
 export const socialsLinks: SocialType[] = [
     {
-        icon: <GitIcon/>,
-        link: ''
+        icon: FaGithub,
+        link: 'https://github.com/melion11'
     },
     {
-        icon: <LinkedIcon/>,
-        link: ''
+        icon: FaLinkedinIn,
+        link: 'https://www.linkedin.com/in/ilya-grinyak'
     },
     {
-        icon: <TgIcon/>,
-        link: ''
+        icon: FaTelegram ,
+        link: 'https://t.me/melion11'
     }]
-
 
 
 export const listIcons: SkillType[] = [

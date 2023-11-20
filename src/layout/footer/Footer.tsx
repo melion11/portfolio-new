@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import {Logo} from '../../shared/ui/Logo/Logo';
 import {useContext} from 'react';
 import {SocialsContext} from '../../context/socialsContext';
-import {FlexWrapper} from '../../shared/ui/FlexWrapper/FlexWrapper';
+import {FlexWrapper} from '../../shared/ui/Styled/FlexWrapper/FlexWrapper';
 import {useTranslation} from 'react-i18next';
+import {Icon} from '../../shared/ui/Icon/Icon';
 
 export const Footer = () => {
 
@@ -13,7 +14,9 @@ export const Footer = () => {
 
     const socialsElements = socials.map((el, i) => {
         return (
-            <Link key={i} href={el.link}>{el.icon}</Link>
+            <Link key={i} href={el.link} target={'_blank'}>
+                <SvgIcon icon={el.icon} size={'30'} color={'var(--secondary-color)'}/>
+            </Link>
         )
     })
 
@@ -49,7 +52,23 @@ const StyledEmail = styled.span`
 `
 
 const Link = styled.a`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-m);
+  color: transparent;
 
+  & > svg {
+    &:hover {
+      fill: var(--color-accent-500);
+    }
+  }
+
+`
+
+const SvgIcon = styled(Icon)`
 `
 
 const Copyright = styled.small`

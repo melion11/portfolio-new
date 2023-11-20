@@ -1,17 +1,10 @@
 :root {
     /*accent */
-    --color-accent-100: #bea6ff;
-    --color-accent-300: #a280ff;
-    --color-accent-500: #8c61ff;
-    --color-accent-700: #704ecc;
-    --color-accent-900: #382766;
-
-    /*success */
-    --color-success-100: #80ffbf;
-    --color-success-300: #22e584;
-    --color-success-500: #14cc70;
-    --color-success-700: #0f9954;
-    --color-success-900: #0a6638;
+    --color-accent-100: #80ffbf;
+    --color-accent-300: #22e584;
+    --color-accent-500: #14cc70;
+    --color-accent-700: #0f9954;
+    --color-accent-900: #0a6638;
 
     /*danger */
     --color-danger-100: #ff8099;
@@ -49,4 +42,14 @@
     --color-dark-700: #171717;
     --color-dark-800: #191919;
     --color-dark-900: #000;
+
+    /*bg-color*/
+    --bg-color-dark: #191919;
+    --bg-color-light: #fff;
+
+    /*colors*/
+    --primary-color: #D9D9D9;
+    --secondary-color: #A7A7A7;
+    --icon-color: #A7A7A7
+
 }

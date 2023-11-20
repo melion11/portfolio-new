@@ -1,5 +1,4 @@
-import { IconContext } from 'react-icons';
-import { IconType } from 'react-icons';
+import {IconContext, IconType} from 'react-icons';
 import {FC} from 'react';
 
 type PropsType = {

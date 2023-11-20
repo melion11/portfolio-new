@@ -4,14 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="244c74ed-f873-4d6b-9c55-f8075c54af8a" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+    <list default="true" id="244c74ed-f873-4d6b-9c55-f8075c54af8a" name="Changes" comment="portfolio structure">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/GitIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/GitIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/LinkedIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/LinkedIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/LogoIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/LogoIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/TgIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/TgIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/sections/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/contact/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/sections/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/sections/projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/projects/Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/sections/projects/project/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/projects/project/Project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/sections/skills/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/skills/Skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/FlexWrapper/FlexWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Styled/FlexWrapper/FlexWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Icon/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Icon/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Logo/Logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Logo/Logo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/StyledTitle/StyledTitle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Styled/StyledTitle/StyledTitle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_boilerplate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_boilerplate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typography.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/LangSwitcher/ui/LangSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/LangSwitcher/ui/LangSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +38,15 @@
       <list>
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +65,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/It-incubator/portfolio-start-project/src/assets/icons&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/It-incubator/portfolio-start-project/src/context&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -61,15 +80,40 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\It-incubator\portfolio-start-project\src\context" />
       <recent name="D:\It-incubator\portfolio-start-project\src\assets\icons" />
+      <recent name="D:\It-incubator\portfolio-start-project\src" />
       <recent name="D:\It-incubator\portfolio-start-project\src\shared\ui\Button" />
       <recent name="D:\It-incubator\portfolio-start-project\src\shared\lib\classNames" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\It-incubator\portfolio-start-project\src\shared\ui\Styled" />
+      <recent name="D:\It-incubator\portfolio-start-project\src\assets\images" />
+      <recent name="D:\It-incubator\portfolio-start-project\src\shared\config\i18n" />
       <recent name="D:\It-incubator\portfolio-start-project\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="predeploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -83,6 +127,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.predeploy" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +146,8 @@
       <workItem from="1700081883981" duration="467000" />
       <workItem from="1700123172904" duration="3557000" />
       <workItem from="1700127560099" duration="630000" />
+      <workItem from="1700128307163" duration="22287000" />
+      <workItem from="1700472162292" duration="16688000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -109,7 +157,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700081993190</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="portfolio structure">
+      <option name="closed" value="true" />
+      <created>1700171168658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700171168658</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix i18n">
+      <option name="closed" value="true" />
+      <created>1700172358960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700172358960</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="portfolio structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="portfolio structure" />
   </component>
 </project>

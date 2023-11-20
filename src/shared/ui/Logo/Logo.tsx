@@ -1,22 +1,18 @@
 import {LogoIcon} from '../../../assets/icons/LogoIcon';
-import {useTranslation} from 'react-i18next';
 import styled from 'styled-components';
 
 
 export const Logo = () => {
 
-    const {t} = useTranslation()
-
     return (
         <Link href={''}>
             <LogoIconW/>
-            <LogoWord>I</LogoWord>
-            <span>{t('name')}</span>
         </Link>
     );
 };
 
 const Link = styled.a`
+  position: relative;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -24,13 +20,5 @@ const Link = styled.a`
 `
 
 const LogoIconW = styled(LogoIcon)`
-  position: relative;
-
-`
-
-const LogoWord = styled.span`
-  font-size: var(--font-size-xl);
-  position: absolute;
-  top: 16px;
-  left: 16px;
+    
 `

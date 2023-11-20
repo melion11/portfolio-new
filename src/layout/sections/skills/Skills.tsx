@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import {FlexWrapper} from '../../../shared/ui/FlexWrapper/FlexWrapper';
+import {FlexWrapper} from '../../../shared/ui/Styled/FlexWrapper/FlexWrapper';
 import {Skill} from './skill/Skill';
 import {useContext} from 'react';
 import {SkillsContext} from '../../../context/skillsContext';
 import {useTranslation} from 'react-i18next';
-import {StyledSubTitle, StyledTitle} from '../../../shared/ui/StyledTitle/StyledTitle';
+import {StyledSubTitle, StyledTitle} from '../../../shared/ui/Styled/StyledTitle/StyledTitle';
 
 
 export const Skills = () => {

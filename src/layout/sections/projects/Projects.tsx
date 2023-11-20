@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {FlexWrapper} from '../../../shared/ui/FlexWrapper/FlexWrapper';
-import {StyledSubTitle, StyledTitle} from '../../../shared/ui/StyledTitle/StyledTitle';
+import {FlexWrapper} from '../../../shared/ui/Styled/FlexWrapper/FlexWrapper';
+import {StyledSubTitle, StyledTitle} from '../../../shared/ui/Styled/StyledTitle/StyledTitle';
 import {useTranslation} from 'react-i18next';
 import {useContext} from 'react';
 import {ProjectsContext} from '../../../context/projectsContext';

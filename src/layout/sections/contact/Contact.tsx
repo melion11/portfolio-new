@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {StyledSubTitle, StyledTitle} from '../../../shared/ui/StyledTitle/StyledTitle';
+import {StyledSubTitle, StyledTitle} from '../../../shared/ui/Styled/StyledTitle/StyledTitle';
 import {useTranslation} from 'react-i18next';
 import {Button} from '../../../shared/ui/Button/Button';
 
