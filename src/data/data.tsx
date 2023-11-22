@@ -67,7 +67,7 @@ export const socialsLinks: SocialType[] = [
         link: 'https://www.linkedin.com/in/ilya-grinyak'
     },
     {
-        icon: FaTelegram ,
+        icon: FaTelegram,
         link: 'https://t.me/melion11'
     }]
 
@@ -199,8 +199,8 @@ export const listIcons: SkillType[] = [
 export const projectsData: ProjectType[] = [
     {
         title: 'Flash cards',
-        demoUrl: '',
-        githubUrl: '',
+        demoUrl: 'https://team-cards-h4mu-p1r4xtpif-kuleshuladzislau.vercel.app/login',
+        githubUrl: 'https://github.com/KuleshUladzislau/Review-cards',
         image: 'https://placehold.co/375x260',
         description: `
         It is interactive and customizable platform for learning through flashcards. 
@@ -209,14 +209,14 @@ export const projectsData: ProjectType[] = [
         `,
         technologies: [
             'React', 'Redux Toolkit', 'RTK Query', 'TypeScript', 'CSS Modules',
-            'Radix UI', 'React Router Dom 6', 'React Hook Form',
-            'Storybook',  'REST API', 'react-toastify', 'zod', 'vite'
+            'Radix UI', 'React Router v6', 'React Hook Form',
+            'Storybook', 'REST API', 'zod', 'vite'
         ],
     },
     {
         title: 'Task Manager',
         demoUrl: '',
-        githubUrl: '',
+        githubUrl: 'https://github.com/melion11/task-manager',
         image: 'https://placehold.co/375x260',
         description: `
         It is a list of tasks. You can combine tasks into groups, 
@@ -225,28 +225,27 @@ export const projectsData: ProjectType[] = [
         The project is in a development project.
         `,
         technologies: [
-            'React', 'Redux Toolkit', 'TypeScript', 'Styled components',
-            'Material UI', 'React Router Dom 6', 'React Hook Form',
+            'React', 'Redux Toolkit', 'TypeScript', 'React Router v6', 'React Hook Form',
             'Storybook', 'Jest', 'Axios', 'REST API',
         ],
     },
     {
         title: 'Social Network',
-        demoUrl: '',
-        githubUrl: '',
+        demoUrl: 'https://melion11.github.io/social-network-functional/',
+        githubUrl: 'https://github.com/melion11/social-network-functional',
         image: 'https://placehold.co/375x260',
         description: `
         This website project is a possible representation of a social network like VKONTAKTE or Facebook. 
         `,
         technologies: [
-            'React', 'Redux', 'Redux Thunk', 'TypeScript',
-            'CSS modules', 'SCSS', 'React Router Dom 5', 'Redux Form', 'Reselect', 'Axios', 'REST API'
+            'React', 'Redux Toolkit', 'TypeScript',
+            'CSS modules', 'React Router v6', 'Formik', 'Axios', 'REST API'
         ],
     },
     {
         title: 'Counter',
-        demoUrl: '',
-        githubUrl: '',
+        demoUrl: 'https://melion11.github.io/it-incubator_counter-with-redux/',
+        githubUrl: 'https://github.com/melion11/it-incubator_counter-with-redux',
         image: 'https://placehold.co/375x260',
         description: `
         Counter is a test project which (to tell the truth) 
@@ -259,8 +258,8 @@ export const projectsData: ProjectType[] = [
     },
     {
         title: 'React Pizza',
-        demoUrl: '',
-        githubUrl: '',
+        demoUrl: 'https://melion11.github.io/pizza-project/',
+        githubUrl: 'https://github.com/melion11/pizza-project',
         image: 'https://placehold.co/375x260',
         description: `
         Counter is a test project which (to tell the truth) 
@@ -268,13 +267,20 @@ export const projectsData: ProjectType[] = [
         on the way how the counter works.
         `,
         technologies: [
-            'React', 'Redux', 'Redux Thunk', 'TypeScript', 'CSS modules'
+            'React', 'TypeScript', 'Redux Toolkit', 'React Router v6',
+            'Axios',
+            'React Hooks',
+            'Prettier',
+            'CSS-Modules / SCSS',
+            'React Content Loader',
+            'React Pagination',
+            'Lodash.Debounce'
         ],
     },
     {
         title: 'Trainee Project',
         demoUrl: '',
-        githubUrl: '',
+        githubUrl: 'https://github.com/melion11/trainee-proj-ulb',
         image: 'https://placehold.co/375x260',
         description: `
         Counter is a test project which (to tell the truth) 

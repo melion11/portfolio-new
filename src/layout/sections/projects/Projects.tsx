@@ -5,6 +5,7 @@ import {useTranslation} from 'react-i18next';
 import {useContext} from 'react';
 import {ProjectsContext} from '../../../context/projectsContext';
 import {Project} from './project/Project';
+import {Container} from '../../../shared/ui/Styled/Container/Container';
 
 export const Projects = () => {
     const projects = useContext(ProjectsContext)
@@ -20,18 +21,18 @@ export const Projects = () => {
 
     return (
         <ProjectsSection>
-            <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
-                <StyledTitle>{t('projects')}</StyledTitle>
-                <StyledSubTitle>{t('things')}</StyledSubTitle>
-                <FlexWrapper justify={'space-around'} wrap={'wrap'} gap={'20px'}>
-                    {projectsElements}
-                </FlexWrapper>
-            </FlexWrapper>
+            <Container>
+                    <StyledTitle>{t('projects')}</StyledTitle>
+                    <StyledSubTitle>{t('things')}</StyledSubTitle>
+                    <FlexWrapper justify={'space-between'} wrap={'wrap'} gap={'20px'}>
+                        {projectsElements}
+                    </FlexWrapper>
+            </Container>
         </ProjectsSection>
     );
 };
 
 const ProjectsSection = styled.section`
-  min-height: 100vh;
-  background-color: #ffc864;
+
+
 `

@@ -7,6 +7,7 @@ export const StyledTitle = styled.h2`
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-m); 
+  margin-bottom: 25px;
 `
 
 export const StyledSubTitle = styled.h3`
@@ -16,4 +17,5 @@ export const StyledSubTitle = styled.h3`
   font-style: normal;
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-m);
+  margin-bottom: 45px;
 `

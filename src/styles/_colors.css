@@ -3,8 +3,8 @@
     --color-accent-100: #80ffbf;
     --color-accent-300: #22e584;
     --color-accent-500: #14cc70;
-    --color-accent-700: #0f9954;
-    --color-accent-900: #0a6638;
+/*    --color-accent-700: #0f9954;
+    --color-accent-900: #0a6638;*/
 
     /*danger */
     --color-danger-100: #ff8099;
@@ -45,6 +45,7 @@
 
     /*bg-color*/
     --bg-color-dark: #191919;
+    --bg-color-dark-light: #363636;
     --bg-color-light: #fff;
 
     /*colors*/

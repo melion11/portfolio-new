@@ -30,7 +30,6 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: var(--bg-color-dark);
   display: flex;
 `
 
