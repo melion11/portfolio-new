@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="244c74ed-f873-4d6b-9c55-f8075c54af8a" name="Changes" comment="css header and main">
+    <list default="true" id="244c74ed-f873-4d6b-9c55-f8075c54af8a" name="Changes" comment="styles for projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/GitIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/GitIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/LivePreviewIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/LivePreviewIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/sections/about/About.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/sections/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/sections/projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/projects/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/sections/projects/project/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/projects/project/Project.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/sections/skills/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/skills/Skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/sections/skills/skill/Skill.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/skills/skill/Skill.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/sections/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/contact/Contact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/Styled/StyledTitle/StyledTitle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Styled/StyledTitle/StyledTitle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_boilerplate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_boilerplate.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/_colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/_typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typography.css" afterDir="false" />
     </list>
@@ -83,6 +71,7 @@
       <recent name="D:\It-incubator\portfolio-start-project\src\shared\lib\classNames" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\It-incubator\portfolio-start-project\src\shared" />
       <recent name="D:\It-incubator\portfolio-start-project\src\shared\ui\Styled" />
       <recent name="D:\It-incubator\portfolio-start-project\src\assets\images" />
       <recent name="D:\It-incubator\portfolio-start-project\src\shared\config\i18n" />
@@ -147,6 +136,8 @@
       <workItem from="1700651508438" duration="2086000" />
       <workItem from="1700678722571" duration="1335000" />
       <workItem from="1700682085978" duration="6497000" />
+      <workItem from="1700690345015" duration="289000" />
+      <workItem from="1700742173480" duration="4069000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -180,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700512262275</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="styles for projects">
+      <option name="closed" value="true" />
+      <created>1700690627171</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700690627171</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +189,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="portfolio structure" />
     <MESSAGE value="css header and main" />
-    <option name="LAST_COMMIT_MESSAGE" value="css header and main" />
+    <MESSAGE value="styles for projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="styles for projects" />
   </component>
 </project>

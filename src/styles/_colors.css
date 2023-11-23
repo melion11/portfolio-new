@@ -46,7 +46,10 @@
     /*bg-color*/
     --bg-color-dark: #191919;
     --bg-color-dark-light: #363636;
+    --bg-color-input: #252527;
+    --border-color-dark: #4a4a4a;
     --bg-color-light: #fff;
+
 
     /*colors*/
     --primary-color: #D9D9D9;

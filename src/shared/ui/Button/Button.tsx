@@ -36,11 +36,11 @@ const ButtonWrapper = styled.button<ButtonProps>`
           theme === ThemeButton.STYLED &&
           css`
             border-radius: 8px;
-            background-color: #191919;
+            background-color: var(--bg-color-dark);
             padding: 16px 8px;
             text-align: center;
-            color: #A7A7A7;
-            font-weight: 500;
+            color: var(--secondary-color);
+            font-weight: var(--font-weight-medium);
             border: 1px solid #A0A0A1;
           `}
 

@@ -5,6 +5,7 @@ import {SocialsContext} from '../../context/socialsContext';
 import {FlexWrapper} from '../../shared/ui/Styled/FlexWrapper/FlexWrapper';
 import {useTranslation} from 'react-i18next';
 import {Icon} from '../../shared/ui/Icon/Icon';
+import {Container} from '../../shared/ui/Styled/Container/Container';
 
 export const Footer = () => {
 
@@ -15,22 +16,24 @@ export const Footer = () => {
     const socialsElements = socials.map((el, i) => {
         return (
             <Link key={i} href={el.link} target={'_blank'}>
-                <SvgIcon icon={el.icon} size={'30'} color={'var(--secondary-color)'}/>
+                <Icon icon={el.icon} size={'30'} color={'var(--secondary-color)'}/>
             </Link>
         )
     })
 
     return (
         <StyledFooter>
-            <FlexWrapper align={'center'} gap={'15px'} justify={'space-around'} width={'100%'}>
-            <Logo/>
-            <StyledPhoneNumber>{t('phone')} +375 (33) 693 92 30</StyledPhoneNumber>
-            <StyledEmail>{t('formEmail')}: ilagrinak@gmail.com</StyledEmail>
-            </FlexWrapper>
-            <FlexWrapper align={'center'} gap={'15px'}>
-                {socialsElements}
-            </FlexWrapper>
-            <Copyright>© 2023 Iliya Grinyak, All Rights Reserved.</Copyright>
+            <Container>
+                <FlexWrapper align={'center'} gap={'15px'} justify={'space-between'}>
+                    <Logo/>
+                    <StyledPhoneNumber>{t('phone')} +375 (33) 693 92 30</StyledPhoneNumber>
+                    <StyledEmail>{t('formEmail')}: ilagrinak@gmail.com</StyledEmail>
+                </FlexWrapper>
+                <SocialsWrapper>
+                    {socialsElements}
+                </SocialsWrapper>
+                <Copyright>© 2023 Iliya Grinyak, All Rights Reserved.</Copyright>
+            </Container>
         </StyledFooter>
     );
 };
@@ -41,14 +44,30 @@ const StyledFooter = styled.footer`
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  padding: 40px 0;
+  background-color: var(--color-dark-700);
+`
+
+
+
+const SocialsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
 `
 
 const StyledPhoneNumber = styled.span`
-
+  color: var(--secondary-color);
+  font-family: DM Sans, sans-serif;
+  font-size: var(--font-size-ss);
 `
 
 const StyledEmail = styled.span`
-
+  color: var(--secondary-color);
+  font-family: DM Sans, sans-serif;
+  font-size: var(--font-size-ss);
 `
 
 const Link = styled.a`
@@ -63,14 +82,14 @@ const Link = styled.a`
   & > svg {
     &:hover {
       fill: var(--color-accent-500);
+      transform: translateY(-4px);
     }
   }
 
 `
 
-const SvgIcon = styled(Icon)`
-`
-
 const Copyright = styled.small`
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
