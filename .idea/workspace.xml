@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="244c74ed-f873-4d6b-9c55-f8075c54af8a" name="Changes" comment="styles for projects">
+    <list default="true" id="244c74ed-f873-4d6b-9c55-f8075c54af8a" name="Changes" comment="styles for contact and footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/sections/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/contact/Contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typography.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +133,7 @@
       <workItem from="1700678722571" duration="1335000" />
       <workItem from="1700682085978" duration="6497000" />
       <workItem from="1700690345015" duration="289000" />
-      <workItem from="1700742173480" duration="4069000" />
+      <workItem from="1700742173480" duration="5691000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -179,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700690627171</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="styles for contact and footer">
+      <option name="closed" value="true" />
+      <created>1700747887284</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700747887284</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +194,7 @@
     <MESSAGE value="portfolio structure" />
     <MESSAGE value="css header and main" />
     <MESSAGE value="styles for projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="styles for projects" />
+    <MESSAGE value="styles for contact and footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="styles for contact and footer" />
   </component>
 </project>

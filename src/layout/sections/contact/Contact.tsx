@@ -48,8 +48,10 @@ const StyledForm = styled.form`
 const Field = styled.input`
   width: 100%;
   padding: 7px 15px;
+  border-radius: 8px;
   border: 1px solid var(--border-color-dark);
   background-color: var(--bg-color-input);
+  
 
   color: var(--primary-color);
   font-family: Poppins, sans-serif;
