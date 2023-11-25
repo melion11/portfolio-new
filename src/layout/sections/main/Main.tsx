@@ -36,8 +36,8 @@ const StyledMain = styled.section`
 
   @media screen and (max-width: 996px) {
     ${FlexWrapper} {
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
   }
 `
