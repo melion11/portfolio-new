@@ -62,7 +62,7 @@ export const MobileMenu = ({navItems, socialItems}: MobileMenuProps) => {
 const StyledNav = styled.nav`
   display: none;
 
-  @media ${theme.media.tablet} {
+  @media ${theme.media.tabletV2} {
     display: block;
   }
 `
@@ -88,7 +88,7 @@ const MobileMenuWrap = styled.div<{isOpen: boolean}>`
 const BurgerButton = styled(Button)<{isOpen: boolean}>`
   position: fixed;
   top: -110px;
-  right: -85px;
+  right: -95px;
   width: 200px;
   height: 200px;
   z-index: 9999;

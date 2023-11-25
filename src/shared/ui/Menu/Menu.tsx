@@ -49,7 +49,7 @@ const StyledNav = styled.nav`
   align-items: center;
   gap: 50px;
 
-  @media ${theme.media.tablet} {
+  @media ${theme.media.tabletV2} {
     display: none;
   }
   

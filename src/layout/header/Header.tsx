@@ -64,6 +64,6 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   opacity: 0.9;
-  z-index: 999;
+  z-index: 9999;
   
 `
