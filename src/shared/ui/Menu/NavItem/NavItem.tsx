@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {MenuLink} from '../Menu';
+import {S} from '../Menu_Styles'
 
 type NavItemProps = {
     link: string
@@ -9,7 +9,7 @@ type NavItemProps = {
 export const NavItem = ({link, title}: NavItemProps) => {
     return (
         <ListItem>
-            <MenuLink href={link}>
+            <S.MenuLink href={link}>
                 {title}
                 <Mask>
                     <span>{title}</span>
@@ -17,7 +17,7 @@ export const NavItem = ({link, title}: NavItemProps) => {
                 <Mask>
                     <span>{title}</span>
                 </Mask>
-            </MenuLink>
+            </S.MenuLink>
         </ListItem>
     );
 };

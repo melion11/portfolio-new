@@ -1,18 +1,19 @@
-import styled from 'styled-components';
 import {FlexWrapper} from '../Styled/FlexWrapper/FlexWrapper';
 import {LangSwitcher} from '../../../widgets';
 import {Icon} from '../Icon/Icon';
 import {NavType} from '../../../layout/header/Header';
 import {SocialType} from '../../../data/data';
 import {NavItem} from './NavItem/NavItem';
-import {theme} from '../../../styles/theme';
+import {S} from './Menu_Styles'
+
 
 type MenuProps = {
     navItems: NavType[]
     socialItems: SocialType[]
+    isMobile?: boolean
 }
 
-export const Menu = ({navItems, socialItems}: MenuProps) => {
+export const Menu = ({navItems, socialItems, isMobile}: MenuProps) => {
 
 
     const navElements = navItems.map((el, i) => {
@@ -23,58 +24,36 @@ export const Menu = ({navItems, socialItems}: MenuProps) => {
 
     const socialsElements = socialItems.map((el, i) => {
         return (
-            <MenuLink key={i} href={el.link} target={'_blank'}>
+            <S.MenuLink key={i} href={el.link} target={'_blank'}>
                 <Icon icon={el.icon} size={'30'} color={'var(--secondary-color)'}/>
-            </MenuLink>
+            </S.MenuLink>
         )
     })
 
     return (
-        <StyledNav>
-            <NavList>
-                {navElements}
-            </NavList>
 
-            <FlexWrapper align={'center'} gap={'15px'}>
-                {socialsElements}
-            </FlexWrapper>
+        isMobile ?
+            <FlexWrapper align={'center'} justify={'center'} direction={'column'} gap={'30px'}>
+                <S.NavListMobile>
+                    {navElements}
+                </S.NavListMobile>
 
-            <LangSwitcher/>
-        </StyledNav>
+                <S.SocialsWrapper>
+                    {socialsElements}
+                </S.SocialsWrapper>
+
+                <LangSwitcher/>
+            </FlexWrapper> :
+            <S.NavDesktop>
+                <S.NavList>
+                    {navElements}
+                </S.NavList>
+
+                <FlexWrapper align={'center'} gap={'15px'}>
+                    {socialsElements}
+                </FlexWrapper>
+
+                <LangSwitcher/>
+            </S.NavDesktop>
     );
 };
-
-const StyledNav = styled.nav`
-  display: flex;
-  align-items: center;
-  gap: 50px;
-
-  @media ${theme.media.tabletV2} {
-    display: none;
-  }
-  
-  
-`
-
-
-const NavList = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: 30px;
-`
-
-export const MenuLink = styled.a`
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: var(--font-size-m);
-  font-weight: var(--font-weight-medium);
-  color: transparent;
-
-  & > svg {
-    &:hover {
-      fill: var(--color-accent-300);
-    }
-  }
-
-`

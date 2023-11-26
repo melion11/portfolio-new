@@ -1,23 +1,31 @@
-import {Menu} from '../../shared/ui/Menu/Menu';
 import {Logo} from '../../shared/ui/Logo/Logo';
-import styled from 'styled-components';
 import {Container} from '../../shared/ui/Styled/Container/Container';
 import {FlexWrapper} from '../../shared/ui/Styled/FlexWrapper/FlexWrapper';
-import {useContext} from 'react';
+import {FC, useContext, useEffect, useState} from 'react';
 import {SocialsContext} from '../../context/socialsContext';
 import {useTranslation} from 'react-i18next';
 import {SocialType} from '../../data/data';
 import {MobileMenu} from '../../shared/ui/Menu/MobileMenu/MobileMenu';
+import {S} from './Header_Styles'
+import {DesktopMenu} from '../../shared/ui/Menu/DesktopMenu/DesktopMenu';
 
 export type NavType = {
     title: string
     link: string
 }
 
-export const Header = () => {
+export const Header: FC = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+    const [isOpenMenu, setIsOpenMenu] = useState(false)
+    const breakpoint = 860;
     const {t} = useTranslation()
-    const socials: SocialType[] = useContext(SocialsContext)
 
+    const openMenuHandler = () => {
+        setIsOpenMenu(prev => !prev)
+    }
+
+
+    const socials: SocialType[] = useContext(SocialsContext)
     const navItems: NavType[] = [
         {
             title: t('home'),
@@ -40,30 +48,31 @@ export const Header = () => {
             link: '#contact'
         }]
 
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => window.removeEventListener('resize', handleWindowResize);
+    }, []);
+
 
     return (
-        <StyledHeader>
+        <S.Header>
             <Container>
                 <FlexWrapper align={'center'} justify={'space-between'}>
                     <Logo/>
-                    <Menu navItems={navItems} socialItems={socials}/>
-                    <MobileMenu navItems={navItems} socialItems={socials}/>
+                    {width < breakpoint ?
+                        <MobileMenu navItems={navItems}
+                                    socialItems={socials}
+                                    isOpenMenu={isOpenMenu}
+                                    onOpenMenu={openMenuHandler}/> :
+                        <DesktopMenu navItems={navItems}
+                                     socialItems={socials}/>
+                    }
                 </FlexWrapper>
             </Container>
-        </StyledHeader>
+        </S.Header>
 
     );
 };
 
-const StyledHeader = styled.header`
-  background-color: var(--bg-color-dark);
-  padding: 20px 0;
-  max-height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.9;
-  z-index: 9999;
-  
-`
