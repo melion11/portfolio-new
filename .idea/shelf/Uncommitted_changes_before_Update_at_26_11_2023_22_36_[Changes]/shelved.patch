@@ -1,0 +1,26 @@
+Index: src/shared/ui/Menu/DesktopMenu/DesktopMenu.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/shared/ui/Menu/DesktopMenu/DesktopMenu.tsx b/src/shared/ui/Menu/DesktopMenu/DesktopMenu.tsx
+new file mode 100644
+--- /dev/null	(date 1701027253748)
++++ b/src/shared/ui/Menu/DesktopMenu/DesktopMenu.tsx	(date 1701027253748)
+@@ -0,0 +1,16 @@
++import {NavType} from '../../../../layout/header/Header';
++import {SocialType} from '../../../../data/data';
++import {Menu} from '../Menu';
++
++
++type MenuProps = {
++    navItems: NavType[]
++    socialItems: SocialType[]
++}
++
++export const DesktopMenu = ({navItems, socialItems}: MenuProps) => {
++
++    return <Menu navItems={navItems} socialItems={socialItems}/>
++};
++
++
