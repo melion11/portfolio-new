@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="244c74ed-f873-4d6b-9c55-f8075c54af8a" name="Changes" comment="create main adaptive and font mixin">
+    <list default="true" id="244c74ed-f873-4d6b-9c55-f8075c54af8a" name="Changes" comment="fix main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/sections/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/sections/skills/skill/Skill.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sections/skills/skill/Skill.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Styled/StyledTitle/StyledTitle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Styled/StyledTitle/StyledTitle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_boilerplate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_boilerplate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/theme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.predeploy" />
       </list>
     </recent_temporary>
@@ -133,7 +140,8 @@
       <workItem from="1700682085978" duration="6497000" />
       <workItem from="1700690345015" duration="289000" />
       <workItem from="1700742173480" duration="5691000" />
-      <workItem from="1700935557107" duration="13092000" />
+      <workItem from="1700935557107" duration="14183000" />
+      <workItem from="1700992926420" duration="2943000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -207,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700950079527</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix main">
+      <option name="closed" value="true" />
+      <created>1700950719248</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700950719248</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +238,7 @@
     <MESSAGE value="fix contacts" />
     <MESSAGE value="create header adaptive burger menu" />
     <MESSAGE value="create main adaptive and font mixin" />
-    <option name="LAST_COMMIT_MESSAGE" value="create main adaptive and font mixin" />
+    <MESSAGE value="fix main" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix main" />
   </component>
 </project>

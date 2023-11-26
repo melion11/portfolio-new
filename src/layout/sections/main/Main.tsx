@@ -36,8 +36,8 @@ const StyledMain = styled.section`
 
   @media screen and (max-width: 996px) {
     ${FlexWrapper} {
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
     }
   }
 `
@@ -49,8 +49,7 @@ const TextWrap = styled.div`
 
   @media screen and (max-width: 996px) {
     margin-bottom: 25px;
-  }
-  
+  }  
 `
 
 const StyledSpan = styled.span`
@@ -97,7 +96,7 @@ const PhotoWrapper = styled.div`
     transform: rotate(80deg);
   }
 
-  @media ${theme.media.tablet} {
+  @media screen and (max-width: 996px) {
     &::before {
       display: none;
     }

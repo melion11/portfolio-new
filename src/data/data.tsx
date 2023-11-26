@@ -119,11 +119,6 @@ export const listIcons: SkillType[] = [
         color: '#FFF',
     },
     {
-        title: 'Ant Design',
-        icon: SiAntdesign,
-        color: '#0170fe',
-    },
-    {
         title: 'Material UI',
         icon: SiMui,
         color: '#0081cb',
@@ -153,16 +148,6 @@ export const listIcons: SkillType[] = [
         icon: SiReactquery,
         color: '#ff4154',
     },
-    // {
-    //     title: 'Apollo',
-    //     icon: SiApollographql,
-    //     color: '#fff',
-    // },
-    // {
-    //     title: 'Graph QL',
-    //     icon: SiGraphql,
-    //     color: '#fff',
-    // },
     {
         title: 'Jest',
         icon: SiJest,
@@ -187,11 +172,6 @@ export const listIcons: SkillType[] = [
         title: 'Webpack',
         icon: SiWebpack,
         color: '#1c78c1',
-    },
-    {
-        title: 'Figma',
-        icon: SiFigma,
-        color: '#a259ff',
     },
 ];
 

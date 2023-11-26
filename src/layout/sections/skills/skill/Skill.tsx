@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import {Icon} from '../../../../shared/ui/Icon/Icon';
 import {IconType} from 'react-icons';
+import {font} from '../../../../styles/common';
+import {theme} from '../../../../styles/theme';
 
 type SkillProps = {
     title: string
@@ -24,13 +26,17 @@ const SkillItem = styled.li`
   gap: 10px;
   align-items: center;
   justify-content: center;
-  width: 16%;
+  width: 90px;
+  flex-grow: 1;
 `
 
 const SkillTitle = styled.h3`
-  color: var(--secondary-color);
-  font-size: 14px;
-  font-weight: var(--font-weight-bold);
+  ${font({color: theme.colors.font, Fmin: 10, Fmax: 12, weight: 700})}
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @media ${theme.media.tablet} {
+    font-weight: var(--font-weight-lite);
+  }
+  
 `
