@@ -47,14 +47,16 @@ const StyledFooter = styled.footer`
   gap: 10px;
   padding: 40px 0;
   background-color: var(--color-dark-700);
-
-  ${FlexWrapper} {
   @media ${theme.media.mobileV2} {
-      flex-direction: column;
+    ${Container} {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    ${FlexWrapper} {
+      flex-direction: column-reverse;
     }
   }
 `
-
 
 
 const SocialsWrapper = styled.div`
