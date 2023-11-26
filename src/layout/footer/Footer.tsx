@@ -6,6 +6,7 @@ import {FlexWrapper} from '../../shared/ui/Styled/FlexWrapper/FlexWrapper';
 import {useTranslation} from 'react-i18next';
 import {Icon} from '../../shared/ui/Icon/Icon';
 import {Container} from '../../shared/ui/Styled/Container/Container';
+import {theme} from '../../styles/theme';
 
 export const Footer = () => {
 
@@ -46,6 +47,12 @@ const StyledFooter = styled.footer`
   gap: 10px;
   padding: 40px 0;
   background-color: var(--color-dark-700);
+
+  ${FlexWrapper} {
+  @media ${theme.media.mobileV2} {
+      flex-direction: column;
+    }
+  }
 `
 
 
