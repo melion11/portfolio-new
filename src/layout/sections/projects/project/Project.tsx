@@ -3,6 +3,8 @@ import {GitIcon} from '../../../../assets/icons/GitIcon';
 import {LivePreviewIcon} from '../../../../assets/icons/LivePreviewIcon';
 import {FlexWrapper} from '../../../../shared/ui/Styled/FlexWrapper/FlexWrapper';
 import {Button, ThemeButton} from '../../../../shared/ui/Button/Button';
+import {font} from '../../../../styles/common';
+import {theme} from '../../../../styles/theme';
 
 type ProjectProps = {
     title: string
@@ -52,8 +54,10 @@ export const Project = ({demoUrl, githubUrl, image, technologies, description, t
 
 const StyledProject = styled.div`
   max-width: 373px;
-  width: 32%;
+  width: 300px;
+  flex-grow: 1;
   border-radius: 20px;
+  margin: 0 auto;
   background: var(--bg-color-dark-light);
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
 `
@@ -67,31 +71,42 @@ const StyledButton = styled(Button)`
 `
 
 const ImageWrapper = styled.div`
-    position: relative;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 20px 20px 0 0;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+  }
+  
   
   &:hover {
     &::before {
       opacity: 1;
     }
-    
+
     ${StyledButton} {
       opacity: 1;
     }
-    
   }
   
+  @media ${theme.media.tablet} {
     &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.30);
-      border-radius: 20px 20px 0 0;
-      backdrop-filter: blur(2px);
-      opacity: 0;
+      opacity: 1;
     }
+
+    ${StyledButton} {
+      opacity: 1;
+    }
+  }
+  
 `
 
 
@@ -112,43 +127,45 @@ const ProjectWrapper = styled.div`
 `
 
 const ProjectTitle = styled.h3`
-  font-size: var(--font-size-ll);
-  font-weight: var(--font-weight-medium);
-  margin-bottom: 17px;
+  ${font({weight: 500, Fmin: 24, Fmax: 28})}
 `
 const ProjectDescription = styled.p`
-  margin-bottom: 12px;
+  ${font({Fmin: 16, Fmax: 18})};
+  text-align: justify;
+  margin: 17px 0 12px;
 `
 const ProjectTechnology = styled.div`
   margin-bottom: 21px;
 `
 
 const TechTitle = styled.h4`
-  font-size: var(--font-size-ss);
-  font-weight: var(--font-weight-regular);
+  ${font({Fmin: 14, Fmax: 16})}
 `
 
 const TechDescriptions = styled.p`
   font-size: var(--font-size-s);
+  text-align: justify;
 `
 
 const LinksWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 48px;
+  justify-content: space-between;
+  width: 100%;
+
 `
 
 const Link = styled.a`
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 3px;
 `
 
 const LinkTitle = styled.span`
   color: #FFF;
-  font-size: var(--font-size-ss);
-  font-weight: var(--font-weight-regular);
-  
+  ${font({Fmin: 14, Fmax: 16})}
+
   &:hover {
     text-decoration-line: underline;
   }
