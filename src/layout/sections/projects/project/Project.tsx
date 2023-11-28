@@ -53,13 +53,16 @@ export const Project = ({demoUrl, githubUrl, image, technologies, description, t
 
 
 const StyledProject = styled.div`
-  max-width: 373px;
   width: 300px;
   flex-grow: 1;
   border-radius: 20px;
-  margin: 0 auto;
   background: var(--bg-color-dark-light);
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
+  
+  @media ${theme.media.desktop} {
+    max-width: 373px;
+  }
+  
 `
 
 const StyledButton = styled(Button)`
