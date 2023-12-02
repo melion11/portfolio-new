@@ -15,7 +15,7 @@ export const MobileMenu = ({onOpenMenu, isOpenMenu}: MobileMenuProps) => {
                 <span></span>
             </S.BurgerButton>
             <S.MobileMenuWrap isOpen={isOpenMenu} onClick={onOpenMenu}>
-                <Menu isMobile/>
+                <Menu onOpenMenu={onOpenMenu} isMobile/>
             </S.MobileMenuWrap>
         </S.NavMobile>
     );

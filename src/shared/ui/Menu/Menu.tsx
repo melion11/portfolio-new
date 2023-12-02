@@ -5,7 +5,7 @@ import {NavType} from '../../../layout/header/Header';
 import {SocialType} from '../../../data/data';
 import {NavItem} from './NavItem/NavItem';
 import {S} from './Menu_Styles'
-import {useContext, useState} from 'react';
+import {useContext} from 'react';
 import {SocialsContext} from '../../../context/socialsContext';
 import {useTranslation} from 'react-i18next';
 import {SocialLink} from '../../../layout/footer/Footer';
@@ -13,10 +13,11 @@ import {SocialLink} from '../../../layout/footer/Footer';
 
 type MenuProps = {
     isMobile?: boolean
+    onOpenMenu?: () => void
 }
 
 
-export const Menu = ({isMobile}: MenuProps) => {
+export const Menu = ({isMobile, onOpenMenu}: MenuProps) => {
 
     const {t} = useTranslation()
     const socials: SocialType[] = useContext(SocialsContext)
@@ -40,7 +41,7 @@ export const Menu = ({isMobile}: MenuProps) => {
 
     const navElements = navItems.map((el, i) => {
         return (
-            <NavItem key={i} title={el.title} link={el.link}/>
+            <NavItem onOpenMenu={onOpenMenu} key={i} title={el.title} link={el.link}/>
         )
     })
 
