@@ -6,7 +6,7 @@ import {Container} from '../../../shared/ui/Styled/Container/Container';
 import abstract from '../../../assets/icons/Abstract.svg'
 import {font} from '../../../shared/lib/font/common';
 import {theme} from '../../../styles/theme';
-
+import Typewriter from 'typewriter-effect';
 
 export const Main = () => {
 
@@ -19,7 +19,17 @@ export const Main = () => {
                     <TextWrap>
                         <StyledSpan>{t('hello')} 👋,</StyledSpan><br/>
                         <StyledH2>{t('myNameIs')} <span>{t('fullName')}</span> </StyledH2>
-                        <StyledH1>{t('frontend')}</StyledH1>
+                        <StyledH1>
+                            <p>{t('frontend')}</p>
+                            <Typewriter
+                                options={{
+                                    strings: [t('frontend')],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 100
+                                }}
+                            />
+                        </StyledH1>
                     </TextWrap>
                     <PhotoWrapper>
                         <Photo src={MyPhoto} alt={'photo'}/>
@@ -49,7 +59,7 @@ const TextWrap = styled.div`
 
   @media screen and (max-width: 996px) {
     margin-bottom: 25px;
-  }  
+  }
 `
 
 const StyledSpan = styled.span`
@@ -71,7 +81,11 @@ const StyledH2 = styled.h2`
 
 `
 const StyledH1 = styled.h1`
-  ${font({Fmax: 27, Fmin: 20})}
+  ${font({Fmax: 27, Fmin: 20})};
+  
+  p {
+    display: none;
+  }
 `
 
 const PhotoWrapper = styled.div`
@@ -81,7 +95,7 @@ const PhotoWrapper = styled.div`
   border-radius: 50%;
   border-image: linear-gradient(90deg, #42b2e8, #5dde65) 1;
   position: relative;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -101,7 +115,7 @@ const PhotoWrapper = styled.div`
       display: none;
     }
   }
-  
+
 `;
 
 const Photo = styled.img`
