@@ -7,6 +7,7 @@ import abstract from '../../../assets/icons/Abstract.svg'
 import {font} from '../../../shared/lib/font/common';
 import {theme} from '../../../styles/theme';
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
 
@@ -31,9 +32,20 @@ export const Main = () => {
                             />
                         </StyledH1>
                     </TextWrap>
-                    <PhotoWrapper>
-                        <Photo src={MyPhoto} alt={'photo'}/>
-                    </PhotoWrapper>
+                    <ParallaxTilt
+                        tiltMaxAngleX={40}
+                        tiltMaxAngleY={40}
+                        perspective={800}
+                        transitionSpeed={1500}
+                        scale={1.1}
+                        gyroscope={true}
+                    >
+                        <PhotoWrapper>
+
+                            <Photo src={MyPhoto} alt={'photo'}/>
+
+                        </PhotoWrapper>
+                    </ParallaxTilt>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -82,11 +94,16 @@ const StyledH2 = styled.h2`
 `
 const StyledH1 = styled.h1`
   ${font({Fmax: 27, Fmin: 20})};
-  
+
   p {
     display: none;
   }
 `
+
+const ParallaxTilt = styled(Tilt)`
+
+`
+
 
 const PhotoWrapper = styled.div`
   width: 350px;
