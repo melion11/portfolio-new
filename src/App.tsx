@@ -8,6 +8,7 @@ import {ProjectsContext} from './context/projectsContext';
 import {Contact} from './layout/sections/contact/Contact';
 import {Footer} from './layout/footer/Footer';
 import {SocialsContext} from './context/socialsContext';
+import {Particle} from './shared/ui/Particle/Particle';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <ProjectsContext.Provider value={projectsData}>
             <SkillsContext.Provider value={listIcons}>
                 <SocialsContext.Provider value={socialsLinks}>
+                    <Particle/>
                     <Header/>
                     <Main/>
                     <Skills/>

@@ -33,6 +33,7 @@ export const Projects = () => {
 };
 
 const ProjectsSection = styled.section`
-
+  background-color: var(--bg-color-dark);
+  position: relative;
 
 `

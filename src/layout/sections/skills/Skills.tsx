@@ -36,7 +36,8 @@ export const Skills = () => {
 };
 
 const SkillsSection = styled.section`
-
+  background-color: var(--bg-color-dark);
+  position: relative;
 `
 const SkillsList = styled.ul`
   display: flex;

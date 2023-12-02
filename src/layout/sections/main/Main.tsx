@@ -112,21 +112,7 @@ const PhotoWrapper = styled.div`
   border-radius: 50%;
   border-image: linear-gradient(90deg, #42b2e8, #5dde65) 1;
   position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 110px;
-    left: -90px;
-    width: 100%;
-    height: 100%;
-    background-image: url(${abstract});
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    transform: rotate(80deg);
-  }
-
+  
   @media screen and (max-width: 996px) {
     &::before {
       display: none;
