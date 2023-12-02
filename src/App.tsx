@@ -9,14 +9,10 @@ import {Contact} from './layout/sections/contact/Contact';
 import {Footer} from './layout/footer/Footer';
 import {SocialsContext} from './context/socialsContext';
 import {Particle} from './shared/ui/Particle/Particle';
-import {useLayoutEffect} from 'react';
-import {scrollSpy} from 'react-scroll';
+import {GoTopBtn} from './shared/ui/GoTopBtn/GoTopBtn';
 
 
 function App() {
-
-
-
 
     return (
         <ProjectsContext.Provider value={projectsData}>
@@ -29,6 +25,7 @@ function App() {
                     <Projects/>
                     <Contact/>
                     <Footer/>
+                    <GoTopBtn/>
                 </SocialsContext.Provider>
             </SkillsContext.Provider>
         </ProjectsContext.Provider>

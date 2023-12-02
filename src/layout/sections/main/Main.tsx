@@ -100,7 +100,6 @@ const StyledH1 = styled.h1`
 `
 
 const ParallaxTilt = styled(Tilt)`
-
 `
 
 
