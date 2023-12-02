@@ -1,9 +1,7 @@
 import {FaGithub, FaLinkedinIn, FaReact, FaTelegram} from 'react-icons/fa';
 import {
-    SiAntdesign,
     SiAxios,
     SiCssmodules,
-    SiFigma,
     SiJest,
     SiMui,
     SiReacthookform,
@@ -18,10 +16,6 @@ import {TbBrandHtml5, TbBrandRadixUi, TbBrandStorybook, TbBrandTypescript} from 
 import {DiCss3Full, DiJavascript1, DiSass} from 'react-icons/di';
 import {BsGit} from 'react-icons/bs';
 import {IconType} from 'react-icons';
-import {GitIcon} from '../assets/icons/GitIcon';
-import {LinkedIcon} from '../assets/icons/LinkedIcon';
-import {TgIcon} from '../assets/icons/TgIcon';
-import {ReactNode} from 'react';
 
 export type SkillType = {
     title: string
@@ -42,20 +36,6 @@ export type SocialType = {
     icon: IconType
     link: string
 };
-
-// export const socialsLinks: SocialType[] = [
-//     {
-//         icon: <GitIcon/>,
-//         link: 'https://github.com/melion11'
-//     },
-//     {
-//         icon: <LinkedIcon/>,
-//         link: 'https://www.linkedin.com/in/ilya-grinyak'
-//     },
-//     {
-//         icon: <TgIcon/>,
-//         link: 'https://t.me/melion11'
-//     }]
 
 export const socialsLinks: SocialType[] = [
     {

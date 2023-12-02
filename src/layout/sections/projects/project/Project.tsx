@@ -3,7 +3,7 @@ import {GitIcon} from '../../../../assets/icons/GitIcon';
 import {LivePreviewIcon} from '../../../../assets/icons/LivePreviewIcon';
 import {FlexWrapper} from '../../../../shared/ui/Styled/FlexWrapper/FlexWrapper';
 import {Button, ThemeButton} from '../../../../shared/ui/Button/Button';
-import {font} from '../../../../styles/common';
+import {font} from '../../../../shared/lib/font/common';
 import {theme} from '../../../../styles/theme';
 
 type ProjectProps = {
@@ -135,14 +135,15 @@ const ProjectTitle = styled.h3`
 const ProjectDescription = styled.p`
   ${font({Fmin: 16, Fmax: 18})};
   text-align: justify;
-  margin: 17px 0 12px;
+  margin: 17px 0 20px;
 `
 const ProjectTechnology = styled.div`
   margin-bottom: 21px;
 `
 
 const TechTitle = styled.h4`
-  ${font({Fmin: 14, Fmax: 16})}
+  ${font({Fmin: 14, Fmax: 16})};
+  margin-bottom: 6px;
 `
 
 const TechDescriptions = styled.p`
@@ -162,7 +163,13 @@ const Link = styled.a`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 3px;
+  gap: 10px;
+  color: #f4f2fa;
+  
+  &:hover {
+    color: var(--color-accent-100);
+  }
+  
 `
 
 const LinkTitle = styled.span`
@@ -170,6 +177,6 @@ const LinkTitle = styled.span`
   ${font({Fmin: 14, Fmax: 16})}
 
   &:hover {
-    text-decoration-line: underline;
+    color: var(--color-accent-100);
   }
 `

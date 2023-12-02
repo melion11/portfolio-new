@@ -4,7 +4,7 @@ import MyPhoto from '../../../assets/images/my-photo.jpg'
 import {useTranslation} from 'react-i18next';
 import {Container} from '../../../shared/ui/Styled/Container/Container';
 import abstract from '../../../assets/icons/Abstract.svg'
-import {font} from '../../../styles/common';
+import {font} from '../../../shared/lib/font/common';
 import {theme} from '../../../styles/theme';
 
 

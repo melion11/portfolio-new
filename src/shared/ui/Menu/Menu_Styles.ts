@@ -44,7 +44,7 @@ const MobileMenuWrap = styled.div<{isOpen: boolean}>`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(31, 31, 32, 0.90);
+  background-color: rgb(31, 31, 32);
   display: none;
   z-index: 999;
   

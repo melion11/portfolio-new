@@ -13,13 +13,12 @@ type MobileMenuProps = {
 
 export const MobileMenu = ({navItems, socialItems, onOpenMenu, isOpenMenu}: MobileMenuProps) => {
 
-
     return (
         <S.NavMobile>
             <S.BurgerButton onClick={onOpenMenu} theme={ThemeButton.CLEAR} isOpen={isOpenMenu}>
                 <span></span>
             </S.BurgerButton>
-            <S.MobileMenuWrap isOpen={isOpenMenu}>
+            <S.MobileMenuWrap isOpen={isOpenMenu} onClick={onOpenMenu}>
                 <Menu navItems={navItems} socialItems={socialItems} isMobile/>
             </S.MobileMenuWrap>
         </S.NavMobile>

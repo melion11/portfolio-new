@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {Icon} from '../../../../shared/ui/Icon/Icon';
 import {IconType} from 'react-icons';
-import {font} from '../../../../styles/common';
+import {font} from '../../../../shared/lib/font/common';
 import {theme} from '../../../../styles/theme';
 
 type SkillProps = {

@@ -15,6 +15,7 @@ export type NavType = {
 }
 
 export const Header: FC = () => {
+    const socials: SocialType[] = useContext(SocialsContext)
     const [width, setWidth] = useState(window.innerWidth);
     const [isOpenMenu, setIsOpenMenu] = useState(false)
     const breakpoint = 860;
@@ -24,8 +25,6 @@ export const Header: FC = () => {
         setIsOpenMenu(prev => !prev)
     }
 
-
-    const socials: SocialType[] = useContext(SocialsContext)
     const navItems: NavType[] = [
         {
             title: t('home'),
@@ -54,7 +53,6 @@ export const Header: FC = () => {
 
         return () => window.removeEventListener('resize', handleWindowResize);
     }, []);
-
 
     return (
         <S.Header>

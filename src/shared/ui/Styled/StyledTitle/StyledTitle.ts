@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {font} from '../../../../styles/common';
+import {font} from '../../../lib/font/common';
 import {theme} from '../../../../styles/theme';
 
 export const StyledTitle = styled.h2`
