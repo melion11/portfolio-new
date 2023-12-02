@@ -9,7 +9,7 @@ export const Contact = () => {
     const {t} = useTranslation()
 
     return (
-        <StyledContact>
+        <StyledContact id={'contact'}>
             <Container>
                 <StyledTitle>{t('contact')}</StyledTitle>
                 <StyledSubTitle>{t('emailMe')}</StyledSubTitle>

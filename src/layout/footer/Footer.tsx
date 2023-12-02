@@ -16,9 +16,9 @@ export const Footer = () => {
 
     const socialsElements = socials.map((el, i) => {
         return (
-            <Link key={i} href={el.link} target={'_blank'}>
+            <SocialLink key={i} href={el.link} target={'_blank'}>
                 <Icon icon={el.icon} size={'30'} color={'var(--secondary-color)'}/>
-            </Link>
+            </SocialLink>
         )
     })
 
@@ -80,7 +80,7 @@ const StyledEmail = styled.span`
   font-size: var(--font-size-ss);
 `
 
-const Link = styled.a`
+export const SocialLink = styled.a`
   display: flex;
   align-items: center;
   text-align: center;

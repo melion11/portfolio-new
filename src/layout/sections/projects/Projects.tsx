@@ -20,7 +20,7 @@ export const Projects = () => {
     })
 
     return (
-        <ProjectsSection>
+        <ProjectsSection id={'projects'}>
             <Container>
                     <StyledTitle>{t('projects')}</StyledTitle>
                     <StyledSubTitle>{t('things')}</StyledSubTitle>
@@ -35,5 +35,4 @@ export const Projects = () => {
 const ProjectsSection = styled.section`
   background-color: var(--bg-color-dark);
   position: relative;
-
 `

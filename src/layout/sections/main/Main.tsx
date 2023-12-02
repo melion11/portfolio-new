@@ -3,7 +3,6 @@ import {FlexWrapper} from '../../../shared/ui/Styled/FlexWrapper/FlexWrapper';
 import MyPhoto from '../../../assets/images/my-photo.jpg'
 import {useTranslation} from 'react-i18next';
 import {Container} from '../../../shared/ui/Styled/Container/Container';
-import abstract from '../../../assets/icons/Abstract.svg'
 import {font} from '../../../shared/lib/font/common';
 import {theme} from '../../../styles/theme';
 import Typewriter from 'typewriter-effect';
@@ -14,7 +13,7 @@ export const Main = () => {
     const {t} = useTranslation()
 
     return (
-        <StyledMain>
+        <StyledMain id={'home'}>
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
                     <TextWrap>

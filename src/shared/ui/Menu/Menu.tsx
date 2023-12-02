@@ -5,16 +5,38 @@ import {NavType} from '../../../layout/header/Header';
 import {SocialType} from '../../../data/data';
 import {NavItem} from './NavItem/NavItem';
 import {S} from './Menu_Styles'
+import {useContext, useState} from 'react';
+import {SocialsContext} from '../../../context/socialsContext';
+import {useTranslation} from 'react-i18next';
+import {SocialLink} from '../../../layout/footer/Footer';
 
 
 type MenuProps = {
-    navItems: NavType[]
-    socialItems: SocialType[]
     isMobile?: boolean
 }
 
-export const Menu = ({navItems, socialItems, isMobile}: MenuProps) => {
 
+export const Menu = ({isMobile}: MenuProps) => {
+
+    const {t} = useTranslation()
+    const socials: SocialType[] = useContext(SocialsContext)
+    const navItems: NavType[] = [
+        {
+            title: t('home'),
+            link: 'home'
+        },
+        {
+            title: t('techStack'),
+            link: 'skills'
+        },
+        {
+            title: t('projects'),
+            link: 'projects'
+        },
+        {
+            title: t('contact'),
+            link: 'contact'
+        }]
 
     const navElements = navItems.map((el, i) => {
         return (
@@ -22,11 +44,11 @@ export const Menu = ({navItems, socialItems, isMobile}: MenuProps) => {
         )
     })
 
-    const socialsElements = socialItems.map((el, i) => {
+    const socialsElements = socials.map((el, i) => {
         return (
-            <S.MenuLink key={i} href={el.link} target={'_blank'}>
+            <SocialLink key={i} href={el.link} target={'_blank'}>
                 <Icon icon={el.icon} size={'30'} color={'var(--secondary-color)'}/>
-            </S.MenuLink>
+            </SocialLink>
         )
     })
 

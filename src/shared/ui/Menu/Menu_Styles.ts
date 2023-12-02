@@ -1,5 +1,6 @@
 import styled, {css} from 'styled-components';
 import {Button} from '../Button/Button';
+import {Link} from 'react-scroll';
 
 // Menu
 
@@ -18,13 +19,18 @@ const NavList = styled.ul`
   gap: 30px;
 `
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   display: flex;
   align-items: center;
   text-align: center;
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
-  color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  
+  &:hover, &.active  {
+    color: var(--color-accent-500);
+  }
 
   & > svg {
     &:hover {

@@ -1,22 +1,23 @@
 import {LogoIcon} from '../../../assets/icons/LogoIcon';
 import styled from 'styled-components';
-
+import {animateScroll as scroll, Link} from 'react-scroll';
 
 export const Logo = () => {
 
     return (
-        <Link href={''}>
+        <LogoLink to={'home'} onClick={scroll.scrollToTop}>
             <LogoIconW/>
-        </Link>
+        </LogoLink>
     );
 };
 
-const Link = styled.a`
+const LogoLink = styled(Link)`
   position: relative;
   display: flex;
   align-items: center;
   text-decoration: none;
   gap: 5px;
+  cursor: pointer;
 `
 
 const LogoIconW = styled(LogoIcon)`

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {S} from '../Menu_Styles'
+import {useLayoutEffect} from 'react';
 
 type NavItemProps = {
     link: string
@@ -7,68 +8,23 @@ type NavItemProps = {
 }
 
 export const NavItem = ({link, title}: NavItemProps) => {
+
+
     return (
         <ListItem>
-            <S.MenuLink href={link}>
+            <S.MenuLink to={link}
+                        smooth
+                        spy
+                        activeClass={'active'}
+                        offset={link === 'contact' ? -14 : -15}
+                        hashSpy
+                        isDynamic
+            >
                 {title}
-                <Mask>
-                    <span>{title}</span>
-                </Mask>
-                <Mask>
-                    <span>{title}</span>
-                </Mask>
             </S.MenuLink>
         </ListItem>
     );
 };
 
-const Mask = styled.span`
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  height: 50%;
-  overflow-y: hidden;
-  color: var(--secondary-color);
-
-  & + & {
-    top: 50%;
-
-    span {
-      display: inline-block;
-      transform: translateY(-50%);
-    }
-  }
-`
-
 const ListItem = styled.li`
-  position: relative;
-
-  &::before {
-    content: '';
-    display: inline-block;
-    background-color: var(--secondary-color);
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: -8px;
-    right: -8px;
-    transform: scale(0);
-    z-index: 1;
-  }
-
-  &:hover {
-    &::before {
-      transform: scale(1);
-    }
-
-    ${Mask} {
-      transform: skewX(12deg) translateX(5px);
-      color: var(--color-accent-500);
-
-      & + ${Mask} {
-        transform: skewX(12deg) translateX(-5px);
-      }
-    }
-  }
 `

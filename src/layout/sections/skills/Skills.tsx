@@ -21,7 +21,7 @@ export const Skills = () => {
     })
 
     return (
-        <SkillsSection>
+        <SkillsSection id={'skills'}>
             <Container>
                 <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
                     <StyledTitle>{t('myTechStack')}</StyledTitle>
