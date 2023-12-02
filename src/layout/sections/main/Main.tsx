@@ -40,9 +40,7 @@ export const Main = () => {
                         gyroscope={true}
                     >
                         <PhotoWrapper>
-
                             <Photo src={MyPhoto} alt={'photo'}/>
-
                         </PhotoWrapper>
                     </ParallaxTilt>
                 </FlexWrapper>

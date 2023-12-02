@@ -11,7 +11,7 @@ export const MobileMenu = ({onOpenMenu, isOpenMenu}: MobileMenuProps) => {
 
     return (
         <S.NavMobile>
-            <S.BurgerButton onClick={onOpenMenu} theme={ThemeButton.CLEAR} isOpen={isOpenMenu}>
+            <S.BurgerButton onClick={onOpenMenu} themeBtn={ThemeButton.CLEAR} isOpen={isOpenMenu}>
                 <span></span>
             </S.BurgerButton>
             <S.MobileMenuWrap isOpen={isOpenMenu} onClick={onOpenMenu}>

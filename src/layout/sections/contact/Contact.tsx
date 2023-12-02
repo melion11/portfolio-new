@@ -3,6 +3,7 @@ import {StyledSubTitle, StyledTitle} from '../../../shared/ui/Styled/StyledTitle
 import {useTranslation} from 'react-i18next';
 import {Button, ThemeButton} from '../../../shared/ui/Button/Button';
 import {Container} from '../../../shared/ui/Styled/Container/Container';
+import {theme} from '../../../styles/theme';
 
 export const Contact = () => {
 
@@ -18,7 +19,7 @@ export const Contact = () => {
                     <Field placeholder={t('formName')}></Field>
                     <Field placeholder={t('formEmail')}></Field>
                     <Field placeholder={t('formMessage')} as={'textarea'}></Field>
-                    <StyledButton theme={ThemeButton.STYLED} type={'submit'}>{t('send')}</StyledButton>
+                    <StyledButton themeBtn={ThemeButton.STYLED} type={'submit'}>{t('send')}</StyledButton>
                 </StyledForm>
             </Container>
         </StyledContact>

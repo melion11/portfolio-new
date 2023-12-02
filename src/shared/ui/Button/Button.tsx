@@ -1,5 +1,6 @@
 import {ButtonHTMLAttributes, FC} from 'react';
 import styled, { css } from 'styled-components';
+import {theme} from '../../../styles/theme';
 
 export const enum ThemeButton {
     CLEAR = 'clear',
@@ -8,12 +9,12 @@ export const enum ThemeButton {
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;
-    theme?: ThemeButton;
+    themeBtn?: ThemeButton;
 }
 
-export const Button: FC<ButtonProps> = ({ className, children, theme, ...restProps }) => {
+export const Button: FC<ButtonProps> = ({ className, children, themeBtn, ...restProps }) => {
     return (
-        <ButtonWrapper className={className} theme={theme} {...restProps}>
+        <ButtonWrapper className={className} themeBtn={themeBtn} {...restProps}>
             {children}
         </ButtonWrapper>
     );
@@ -22,8 +23,8 @@ export const Button: FC<ButtonProps> = ({ className, children, theme, ...restPro
 const ButtonWrapper = styled.button<ButtonProps>`
   cursor: pointer;
 
-  ${({theme}) =>
-          theme === ThemeButton.CLEAR &&
+  ${({themeBtn}) =>
+          themeBtn === ThemeButton.CLEAR &&
           css`
             padding: 0;
             margin: 0;
@@ -32,8 +33,8 @@ const ButtonWrapper = styled.button<ButtonProps>`
             background: none;
           `}
 
-  ${({theme}) =>
-          theme === ThemeButton.STYLED &&
+  ${({themeBtn}) =>
+          themeBtn === ThemeButton.STYLED &&
           css`
             border-radius: 8px;
             background-color: var(--bg-color-dark);
@@ -42,6 +43,12 @@ const ButtonWrapper = styled.button<ButtonProps>`
             color: var(--secondary-color);
             font-weight: var(--font-weight-medium);
             border: 1px solid #A0A0A1;
+            transition: ${theme.animations.transition};
+
+            &:hover {
+              color: var(--primary-color);
+              border: 1px solid var(--primary-color);
+            }
           `}
 
 `;

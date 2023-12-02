@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components';
 import {Button} from '../Button/Button';
 import {Link} from 'react-scroll';
+import {theme} from '../../../styles/theme';
 
 // Menu
 
@@ -27,6 +28,7 @@ const MenuLink = styled(Link)`
   font-weight: var(--font-weight-medium);
   color: var(--primary-color);
   cursor: pointer;
+  transition: ${theme.animations.transition};
   
   &:hover, &.active  {
     color: var(--color-accent-500);
@@ -51,15 +53,23 @@ const MobileMenuWrap = styled.div<{isOpen: boolean}>`
   right: 0;
   bottom: 0;
   background-color: rgb(31, 31, 32);
-  display: none;
   z-index: 999;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: 0.6s ease-in-out;
+
+  // чтобы меню выезжало сверху вниз используем transform -100%
   ${props => props.isOpen && css<{isOpen: boolean}>`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transform: translateY(0);
+    
+    & ul {
+      gap: 40px;
+    }
+    
   `}
-  
+
 `
 
 const BurgerButton = styled(Button)<{isOpen: boolean}>`
@@ -119,7 +129,8 @@ const NavListMobile = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
+  transition: 0.6s ease-in-out;
 `
 
 const SocialsWrapper = styled.div`

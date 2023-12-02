@@ -22,7 +22,7 @@ export const Project = ({demoUrl, githubUrl, image, technologies, description, t
 
             <ImageWrapper>
                 <ProjectImage src={image} alt={'project'}/>
-                <StyledButton theme={ThemeButton.STYLED}>VIEW PROJECT</StyledButton>
+                <StyledButton themeBtn={ThemeButton.STYLED}>VIEW PROJECT</StyledButton>
             </ImageWrapper>
 
             <ProjectWrapper>
@@ -69,8 +69,9 @@ const StyledButton = styled(Button)`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   opacity: 0;
+  transition: ${theme.animations.transition};
 `
 
 const ImageWrapper = styled.div`
@@ -87,6 +88,7 @@ const ImageWrapper = styled.div`
     border-radius: 20px 20px 0 0;
     backdrop-filter: blur(2px);
     opacity: 0;
+    transition: ${theme.animations.transition};
   }
   
   
@@ -97,6 +99,7 @@ const ImageWrapper = styled.div`
 
     ${StyledButton} {
       opacity: 1;
+      transform: translate(-50%, -50%);
     }
   }
   
@@ -165,7 +168,7 @@ const Link = styled.a`
   justify-content: flex-start;
   gap: 10px;
   color: #f4f2fa;
-  
+  transition: ${theme.animations.transition};
   &:hover {
     color: var(--color-accent-100);
   }

@@ -88,8 +88,11 @@ export const SocialLink = styled.a`
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-m);
   color: transparent;
+  transition: ${theme.animations.transition};
 
   & > svg {
+    transition: ${theme.animations.transition};
+    
     &:hover {
       fill: var(--color-accent-500);
       transform: translateY(-4px);

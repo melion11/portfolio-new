@@ -1,6 +1,7 @@
 import {Button, ThemeButton} from '../../../shared/ui/Button/Button';
 import {useTranslation} from 'react-i18next';
 import styled from 'styled-components';
+import {theme} from '../../../styles/theme';
 
 interface LangSwitcherProps {
     className?: string
@@ -15,7 +16,7 @@ export const LangSwitcher = ({className}:LangSwitcherProps) => {
     }
 
     return (
-        <StyledButton onClick={onToggle} theme={ThemeButton.CLEAR}>
+        <StyledButton onClick={onToggle} themeBtn={ThemeButton.CLEAR}>
             {t('translation')}
         </StyledButton>
     );
@@ -27,7 +28,7 @@ const StyledButton = styled(Button)`
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-m);
-  
+  transition: ${theme.animations.transition};
   &:hover {
     color: var(--color-accent-500);
   }
