@@ -6,6 +6,7 @@ import {SkillsContext} from '../../../context/skillsContext';
 import {useTranslation} from 'react-i18next';
 import {StyledSubTitle, StyledTitle} from '../../../shared/ui/Styled/StyledTitle/StyledTitle';
 import {Container} from '../../../shared/ui/Styled/Container/Container';
+import {Fade} from 'react-awesome-reveal';
 
 
 export const Skills = () => {
@@ -26,9 +27,13 @@ export const Skills = () => {
                 <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
                     <StyledTitle>{t('myTechStack')}</StyledTitle>
                     <StyledSubTitle>{t('techWorking')}</StyledSubTitle>
-                    <SkillsList>
-                        {skillsElements}
-                    </SkillsList>
+
+                        <SkillsList>
+                            <Fade triggerOnce cascade damping={0.1}>
+                            {skillsElements}
+                            </Fade>
+                        </SkillsList>
+
                 </FlexWrapper>
             </Container>
         </SkillsSection>

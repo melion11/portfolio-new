@@ -3,7 +3,7 @@ import {StyledSubTitle, StyledTitle} from '../../../shared/ui/Styled/StyledTitle
 import {useTranslation} from 'react-i18next';
 import {Button, ThemeButton} from '../../../shared/ui/Button/Button';
 import {Container} from '../../../shared/ui/Styled/Container/Container';
-import {theme} from '../../../styles/theme';
+import {Fade} from 'react-awesome-reveal';
 
 export const Contact = () => {
 
@@ -15,19 +15,21 @@ export const Contact = () => {
                 <StyledTitle>{t('contact')}</StyledTitle>
                 <StyledSubTitle>{t('emailMe')}</StyledSubTitle>
 
-                <StyledForm>
-                    <Field placeholder={t('formName')}></Field>
-                    <Field placeholder={t('formEmail')}></Field>
-                    <Field placeholder={t('formMessage')} as={'textarea'}></Field>
-                    <StyledButton themeBtn={ThemeButton.STYLED} type={'submit'}>{t('send')}</StyledButton>
-                </StyledForm>
+                <Fade triggerOnce direction={'bottom-left'}>
+                    <StyledForm>
+                        <Field placeholder={t('formName')}></Field>
+                        <Field placeholder={t('formEmail')}></Field>
+                        <Field placeholder={t('formMessage')} as={'textarea'}></Field>
+                        <StyledButton themeBtn={ThemeButton.STYLED} type={'submit'}>{t('send')}</StyledButton>
+                    </StyledForm>
+                </Fade>
             </Container>
         </StyledContact>
     );
 };
 
 const StyledContact = styled.section`
-    position: relative;
+  position: relative;
 `
 
 const StyledForm = styled.form`
@@ -38,12 +40,12 @@ const StyledForm = styled.form`
   max-width: 600px;
   margin: 0 auto;
   width: 100%;
-  
+
   textarea {
     resize: none;
     height: 155px;
   }
-  
+
 `
 
 const Field = styled.input`
@@ -52,23 +54,23 @@ const Field = styled.input`
   border-radius: 8px;
   border: 1px solid var(--border-color-dark);
   background-color: var(--bg-color-input);
-  
+
 
   color: var(--primary-color);
   font-family: Poppins, sans-serif;
   font-size: var(--font-size-xss);
   letter-spacing: 0.6px;
-  
+
   &::placeholder {
     text-transform: capitalize;
   }
-  
+
   &:focus-visible {
     outline: 1px solid var(--border-color-dark);
   }
-  
+
 `
 
 const StyledButton = styled(Button)`
-    min-width: 150px;
+  min-width: 150px;
 `

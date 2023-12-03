@@ -4,7 +4,7 @@ import {StyledSubTitle, StyledTitle} from '../../../shared/ui/Styled/StyledTitle
 import {useTranslation} from 'react-i18next';
 import {useContext} from 'react';
 import {ProjectsContext} from '../../../context/projectsContext';
-import {Project} from './project/Project';
+import {Project, StyledFade} from './project/Project';
 import {Container} from '../../../shared/ui/Styled/Container/Container';
 
 export const Projects = () => {
@@ -13,20 +13,26 @@ export const Projects = () => {
 
     const projectsElements = projects.map((el, i) => {
         return (
+
             <Project key={i} title={el.title} demoUrl={el.demoUrl} description={el.description}
                      githubUrl={el.githubUrl} image={el.image} technologies={el.technologies}
             />
+
         )
     })
 
     return (
         <ProjectsSection id={'projects'}>
             <Container>
-                    <StyledTitle>{t('projects')}</StyledTitle>
-                    <StyledSubTitle>{t('things')}</StyledSubTitle>
-                    <FlexWrapper justify={'space-between'} wrap={'wrap'} gap={'20px'}>
+                <StyledTitle>{t('projects')}</StyledTitle>
+                <StyledSubTitle>{t('things')}</StyledSubTitle>
+
+                <FlexWrapper justify={'space-between'} wrap={'wrap'} gap={'20px'}>
+                    <StyledFade triggerOnce cascade damping={0.2} direction={'left'}>
                         {projectsElements}
-                    </FlexWrapper>
+                    </StyledFade>
+                </FlexWrapper>
+
             </Container>
         </ProjectsSection>
     );

@@ -5,6 +5,7 @@ import {FlexWrapper} from '../../../../shared/ui/Styled/FlexWrapper/FlexWrapper'
 import {Button, ThemeButton} from '../../../../shared/ui/Button/Button';
 import {font} from '../../../../shared/lib/font/common';
 import {theme} from '../../../../styles/theme';
+import {Fade} from 'react-awesome-reveal';
 
 type ProjectProps = {
     title: string
@@ -18,51 +19,55 @@ type ProjectProps = {
 export const Project = ({demoUrl, githubUrl, image, technologies, description, title}: ProjectProps) => {
 
     return (
-        <StyledProject>
+            <StyledProject>
+                <ImageWrapper>
+                    <ProjectImage src={image} alt={'project'}/>
+                    <StyledButton themeBtn={ThemeButton.STYLED}>VIEW PROJECT</StyledButton>
+                </ImageWrapper>
 
-            <ImageWrapper>
-                <ProjectImage src={image} alt={'project'}/>
-                <StyledButton themeBtn={ThemeButton.STYLED}>VIEW PROJECT</StyledButton>
-            </ImageWrapper>
+                <ProjectWrapper>
+                    <FlexWrapper direction={'column'}>
+                        <ProjectTitle>{title}</ProjectTitle>
+                        <ProjectDescription>
+                            {description}
+                        </ProjectDescription>
+                        <ProjectTechnology>
+                            <TechTitle>Tech stack: </TechTitle>
+                            <TechDescriptions>{technologies.join(', ')}</TechDescriptions>
+                        </ProjectTechnology>
+                    </FlexWrapper>
+                    <LinksWrapper>
+                        <Link href={demoUrl} target={'_blank'}>
+                            <LivePreviewIcon/>
+                            <LinkTitle>Live preview</LinkTitle>
+                        </Link>
+                        <Link href={githubUrl} target={'_blank'}>
+                            <GitIcon/>
+                            <LinkTitle>View code</LinkTitle>
+                        </Link>
+                    </LinksWrapper>
+                </ProjectWrapper>
+            </StyledProject>
 
-            <ProjectWrapper>
-                <FlexWrapper direction={'column'}>
-                    <ProjectTitle>{title}</ProjectTitle>
-                    <ProjectDescription>
-                        {description}
-                    </ProjectDescription>
-                    <ProjectTechnology>
-                        <TechTitle>Tech stack: </TechTitle>
-                        <TechDescriptions>{technologies.join(', ')}</TechDescriptions>
-                    </ProjectTechnology>
-                </FlexWrapper>
-                <LinksWrapper>
-                    <Link href={demoUrl} target={'_blank'}>
-                        <LivePreviewIcon/>
-                        <LinkTitle>Live preview</LinkTitle>
-                    </Link>
-                    <Link href={githubUrl} target={'_blank'}>
-                        <GitIcon/>
-                        <LinkTitle>View code</LinkTitle>
-                    </Link>
-                </LinksWrapper>
-            </ProjectWrapper>
-        </StyledProject>
     );
 };
 
-
-const StyledProject = styled.div`
+export const StyledFade = styled(Fade)`
   width: 300px;
+
   flex-grow: 1;
-  border-radius: 20px;
-  background: var(--bg-color-dark-light);
-  box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
-  
+
   @media ${theme.media.desktop} {
     max-width: 373px;
   }
   
+`
+
+const StyledProject = styled.div`
+  height: 100%;
+  border-radius: 20px;
+  background: var(--bg-color-dark-light);
+  box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
 `
 
 const StyledButton = styled(Button)`
@@ -90,8 +95,8 @@ const ImageWrapper = styled.div`
     opacity: 0;
     transition: ${theme.animations.transition};
   }
-  
-  
+
+
   &:hover {
     &::before {
       opacity: 1;
@@ -102,7 +107,7 @@ const ImageWrapper = styled.div`
       transform: translate(-50%, -50%);
     }
   }
-  
+
   @media ${theme.media.tablet} {
     &::before {
       opacity: 1;
@@ -112,7 +117,7 @@ const ImageWrapper = styled.div`
       opacity: 1;
     }
   }
-  
+
 `
 
 
@@ -169,16 +174,17 @@ const Link = styled.a`
   gap: 10px;
   color: #f4f2fa;
   transition: ${theme.animations.transition};
+
   &:hover {
     color: var(--color-accent-100);
   }
-  
+
 `
 
 const LinkTitle = styled.span`
   color: #FFF;
-  ${font({Fmin: 14, Fmax: 16})}
 
+  ${font({Fmin: 14, Fmax: 16})}
   &:hover {
     color: var(--color-accent-100);
   }
