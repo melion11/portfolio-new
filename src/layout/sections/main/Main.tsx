@@ -30,6 +30,7 @@ export const Main = () => {
                                 }}
                             />
                         </StyledH1>
+                        {/*<Button themeBtn={ThemeButton.STYLED}>Downland CV</Button>*/}
                     </TextWrap>
                     <ParallaxTilt
                         tiltMaxAngleX={40}
