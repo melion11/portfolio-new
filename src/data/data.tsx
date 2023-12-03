@@ -16,6 +16,11 @@ import {TbBrandHtml5, TbBrandRadixUi, TbBrandStorybook, TbBrandTypescript} from 
 import {DiCss3Full, DiJavascript1, DiSass} from 'react-icons/di';
 import {BsGit} from 'react-icons/bs';
 import {IconType} from 'react-icons';
+import socialNetwork from '../assets/images/social-network.png'
+import counter from '../assets/images/counter.png'
+import cards from '../assets/images/cards.png'
+import reactPizza from '../assets/images/react-pizza.png'
+
 
 export type SkillType = {
     title: string
@@ -156,12 +161,15 @@ export const listIcons: SkillType[] = [
 ];
 
 
+
+
+
 export const projectsData: ProjectType[] = [
     {
         title: 'Flash cards',
         demoUrl: 'https://team-cards-h4mu-p1r4xtpif-kuleshuladzislau.vercel.app/login',
         githubUrl: 'https://github.com/KuleshUladzislau/Review-cards',
-        image: 'https://placehold.co/375x260',
+        image: `${cards}`,
         description: `
         It is interactive and customizable platform for learning through flashcards. 
         Users can easily create, organize, and study flashcards on various subjects, 
@@ -193,7 +201,7 @@ export const projectsData: ProjectType[] = [
         title: 'Social Network',
         demoUrl: 'https://melion11.github.io/social-network-functional/',
         githubUrl: 'https://github.com/melion11/social-network-functional',
-        image: 'https://placehold.co/375x260',
+        image: `${socialNetwork}`,
         description: `
         This website project is a possible representation of a social network like VKONTAKTE or Facebook. 
         `,
@@ -206,7 +214,7 @@ export const projectsData: ProjectType[] = [
         title: 'Counter',
         demoUrl: 'https://melion11.github.io/it-incubator_counter-with-redux/',
         githubUrl: 'https://github.com/melion11/it-incubator_counter-with-redux',
-        image: 'https://placehold.co/375x260',
+        image: `${counter}`,
         description: `
         Counter is a test project which (to tell the truth) 
         doesn't have a lot of practical use. It allows to do some settings which influence 
@@ -220,7 +228,7 @@ export const projectsData: ProjectType[] = [
         title: 'React Pizza',
         demoUrl: 'https://melion11.github.io/pizza-project/',
         githubUrl: 'https://github.com/melion11/pizza-project',
-        image: 'https://placehold.co/375x260',
+        image: `${reactPizza}`,
         description: `
         Counter is a test project which (to tell the truth) 
         doesn't have a lot of practical use. It allows to do some settings which influence 
