@@ -20,6 +20,7 @@ import socialNetwork from '../assets/images/social-network.png'
 import counter from '../assets/images/counter.png'
 import cards from '../assets/images/cards.png'
 import reactPizza from '../assets/images/react-pizza.png'
+import taskManager from '../assets/images/taskManager.png'
 
 
 export type SkillType = {
@@ -183,9 +184,9 @@ export const projectsData: ProjectType[] = [
     },
     {
         title: 'Task Manager',
-        demoUrl: '',
+        demoUrl: 'https://task-manager-7lyqtkus3-melion11.vercel.app/login',
         githubUrl: 'https://github.com/melion11/task-manager',
-        image: 'https://placehold.co/375x260',
+        image: `${taskManager}`,
         description: `
         It is a list of tasks. You can combine tasks into groups, 
         delete/add new ones, as well as change their names. 
