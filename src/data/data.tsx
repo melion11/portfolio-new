@@ -177,7 +177,7 @@ export const projectsData: ProjectType[] = [
         enhancing their learning experience and knowledge retention.
         `,
         technologies: [
-            'React', 'Redux Toolkit', 'RTK Query', 'TypeScript', 'CSS Modules',
+            'React', 'Redux Toolkit', 'RTK Query', 'TypeScript', 'SCSS Modules',
             'Radix UI', 'React Router v6', 'React Hook Form',
             'Storybook', 'REST API', 'zod', 'vite'
         ],
@@ -194,8 +194,8 @@ export const projectsData: ProjectType[] = [
         The project is in a development project.
         `,
         technologies: [
-            'React', 'Redux Toolkit', 'TypeScript', 'React Router v6', 'React Hook Form',
-            'Storybook', 'Jest', 'Axios', 'REST API',
+            'React', 'Redux Toolkit Query', 'TypeScript', 'React Router v6', 'React Hook Form',
+            'Storybook', 'REST API', 'Radix-UI', 'Framer Motion'
         ],
     },
     {
@@ -231,9 +231,7 @@ export const projectsData: ProjectType[] = [
         githubUrl: 'https://github.com/melion11/pizza-project',
         image: `${reactPizza}`,
         description: `
-        Counter is a test project which (to tell the truth) 
-        doesn't have a lot of practical use. It allows to do some settings which influence 
-        on the way how the counter works.
+        React Pizza is an online store where you can choose the pizzas you like and add them to your cart.
         `,
         technologies: [
             'React', 'TypeScript', 'Redux Toolkit', 'React Router v6',
@@ -252,12 +250,10 @@ export const projectsData: ProjectType[] = [
         githubUrl: 'https://github.com/melion11/trainee-proj-ulb',
         image: 'https://placehold.co/375x260',
         description: `
-        Counter is a test project which (to tell the truth) 
-        doesn't have a lot of practical use. It allows to do some settings which influence 
-        on the way how the counter works.
+        
         `,
         technologies: [
-            'React', 'Redux', 'Redux Thunk', 'TypeScript', 'CSS modules'
+
         ],
     },
 ];
