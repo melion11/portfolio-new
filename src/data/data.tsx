@@ -184,7 +184,7 @@ export const projectsData: ProjectType[] = [
     },
     {
         title: 'Task Manager',
-        demoUrl: 'https://task-manager-7lyqtkus3-melion11.vercel.app/login',
+        demoUrl: 'https://melion11.github.io/task-manager/',
         githubUrl: 'https://github.com/melion11/task-manager',
         image: `${taskManager}`,
         description: `
